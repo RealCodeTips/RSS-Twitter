@@ -1,0 +1,13 @@
+{
+  "rssFeeds": [
+    "https://www.thecrazyprogrammer.com/feed",
+		"https://www.sitepoint.com/feed/",
+		"https://css-tricks.com/feed/",
+		"http://sdtimes.com/feed",
+		"https://speckyboy.com/feed",
+		"http://dev.to/feed",
+		"https://www.freecodecamp.org/news/rss/"
+  ],
+  "checkpoints": {
+  }
+}

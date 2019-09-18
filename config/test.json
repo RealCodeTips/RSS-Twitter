@@ -1,0 +1,9 @@
+{
+  "rssFeeds": ["a", "b"],
+  "checkpoints": {
+    "testCheckpoint": {
+     "lastBuildDate": "Wed, 18 Sep 2019 07:02:58 +0000",
+     "latestArticleDate": "Wed, 18 Sep 2019 07:02:58 +0000"
+    }
+   }
+}

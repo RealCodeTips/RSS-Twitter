@@ -30,7 +30,10 @@ git commit -m "New version - $VER"
 
 GIT_COMMIT=$(git rev-parse HEAD)
 
-go build -o build/darwin/rss_feeder -ldflags="-X main.commit=${GIT_COMMIT}"
-env GOOS=linux GOARCH=amd64 go build -o build/linux/rss_feeder -ldflags="-X main.commit=${GIT_COMMIT}"
+go build -o build/darwin/rss_feeder_$VER -ldflags="-X main.commit=${GIT_COMMIT}"
+env GOOS=linux GOARCH=amd64 go build -o build/linux/rss_feeder_$VER -ldflags="-X main.commit=${GIT_COMMIT}"
+
+cp config.json .env build/darwin
+cp config.json .env build/linux
 
 echo $GIT_COMMIT > build/commit.dat

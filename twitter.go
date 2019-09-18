@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"os"
 
 	"github.com/dghubble/go-twitter/twitter"
@@ -57,8 +56,6 @@ func sendTweet(item rss.Item) error {
 		ConsumerKey:       os.Getenv("CONSUMER_KEY"),
 		ConsumerSecret:    os.Getenv("CONSUMER_SECRET"),
 	}
-
-	log.Println(c)
 
 	client, err := getClient(&c)
 	if err != nil {

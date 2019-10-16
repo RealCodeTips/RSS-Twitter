@@ -1,0 +1,6 @@
+# Config
+.env
+
+# Builds
+version.go.bak
+build/
